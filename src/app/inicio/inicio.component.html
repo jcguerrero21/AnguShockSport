@@ -1,0 +1,80 @@
+<!--cabecera-->
+<div class="cabecera">
+  <div class="slider">
+    <ul class="slides">
+      <li>
+        <img [src]="imgEquipoBaloncesto"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Con AngularShockSport</h3>
+          <h5 class="light grey-text text-lighten-3">Olvidate de las llamadas para alquilar una pista</h5>
+        </div>
+      </li>
+      <li>
+        <img [src]='imgNadador'> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Disfruta de todas nuestras pistas</h3>
+          <h5 class="light grey-text text-lighten-3">Tenemos una gran variedad de todo tipo en tu ciudad</h5>
+        </div>
+      </li>
+      <li>
+        <img [src]="imgPadel"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Enganchate a la nueva moda</h3>
+          <h5 class="light grey-text text-lighten-3">¡El padel!</h5>
+        </div>
+      </li>
+      <li>
+        <img [src]="imgFutbol"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>Ya no tienes excusa para no hacer deporte</h3>
+          <h5 class="light grey-text text-lighten-3">A que esperas, accede a iniciar sesión y registrate</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!--card-->
+<div class="tarjeta">
+  <div class="card" style="overflow: visible;">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" [src]="imgAtleta">
+    </div>
+    <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Bienvenido<i
+          class="material-icons right">more_vert</i></span>
+      <p><a href="#">Mira nuestras pistas</a></p>
+    </div>
+    <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Como funcionamos<i
+          class="material-icons right">close</i></span>
+      <p>Solamente tendrás que registrarte, acceder a tus pistas y alquilar la pista que quieras. ¡Así de
+        sencillo!</p>
+    </div>
+  </div>
+</div>
+<a class="btn red" onclick="$('.tap-target').tapTarget('open')">¿Alguna duda?</a>
+
+<!--carousel-->
+<!--<div class="tarjeta">-->
+<!--<div class="carousel carousel-slider">-->
+<!--<a class="carousel-item" href="#one!"><img [src]="imgSalida"></a>-->
+<!--<a class="carousel-item" href="#two!"><img [src]="imgFutsal"></a>-->
+<!--<a class="carousel-item" href="#three!"><img [src]="imgBasket"></a>-->
+<!--<a class="carousel-item" href="#three!"><img [src]="imgTenis"></a>-->
+<!--<a class="carousel-item" href="#four!"><img [src]="imgPadel"></a>-->
+<!--<a class="carousel-item" href="#four!"><img [src]="imgFutbol"></a>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--Tag Target-->
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+  <a id="menu" class="btn btn-floating btn-large cyan"><i class="material-icons">menu</i></a>
+</div>
+<div class="tap-target" data-activates="menu">
+  <div class="tap-target-content">
+    <h5>Si tienes alguna duda ponte en contacto conmigo</h5>
+    <p><i class="material-icons">phone_android</i> 660749449</p>
+    <p><i class="material-icons">mail</i> jotaceguerrerom21@gmail.com</p>
+  </div>
+</div>
