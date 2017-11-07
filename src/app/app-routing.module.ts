@@ -9,7 +9,6 @@ import {DescuentosComponent} from "./descuentos/descuentos.component";
 import {RegistroComponent} from "./registro/registro.component";
 import {PistasAlquiladasListaComponent} from "./pistas-alquiladas/pistas-alquiladas-lista.component";
 import {PistasAlquiladasAlquilarComponent} from "./pistas-alquiladas/pistas-alquiladas-alquilar.component";
-import {CasaComponent} from './casa.component';
 
 const appRoutes: Routes = [
   {path: 'pistas', component: PistasComponent},
@@ -18,15 +17,14 @@ const appRoutes: Routes = [
   {
     path: 'pistasAlquiladas', component: PistasAlquiladasComponent,
     children: [
+      {path: '', redirectTo: 'lista-alquiladas', pathMatch: 'full'},
       {path: 'lista-alquiladas', component: PistasAlquiladasListaComponent},
       {path: 'formulario-alquilar', component: PistasAlquiladasAlquilarComponent},
-      {path: 'lista-alquiladas/:id/:fecha', component: PistasAlquiladasAlquilarComponent},
+      {path: 'formulario-alquilar/:id/:fecha', component: PistasAlquiladasAlquilarComponent}
     ]
   },
   {path: 'descuentos', component: DescuentosComponent},
-  {path: 'registro', component: RegistroComponent},
-  {path: 'casa', component: CasaComponent},
-  { path: '', redirectTo: '/casa', pathMatch: 'full'}
+  {path: 'registro', component: RegistroComponent}
 ];
 
 @NgModule({

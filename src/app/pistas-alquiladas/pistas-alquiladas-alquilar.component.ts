@@ -1,5 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {Router, ActivatedRoute, Params} from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, Params} from "@angular/router";
 
 @Component({
   selector: 'pistas-alquiladas-alquilar',
@@ -9,9 +9,20 @@ import {Router, ActivatedRoute, Params} from '@angular/router';
 
 export class PistasAlquiladasAlquilarComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router
+  ) { }
 
   ngOnInit() {
+    let id = this.route.snapshot.params['id'];
+    let fecha = this.route.snapshot.params['fecha'];
+
+    if(!id) return;
+    if(!fecha) return;
+
+    console.log(id);
+    console.log(fecha);
   }
 
 }
