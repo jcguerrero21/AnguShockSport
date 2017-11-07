@@ -1,3 +1,25 @@
-<h1>
-  Lista de tus pistas alquiladas
-</h1>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading center">
+      <h4>Lista de tus pistas alquiladas</h4>
+    </div>
+    <div class="panel-body">
+      <table class="bordered responsive-table striped">
+        <thead class="thead-default">
+          <tr>
+            <th>NOMBRE PISTA</th>
+            <th>FECHA RESERVA</th>
+            <th>HORA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of lista">
+            <td>{{ item.id_pista.nombre }}</td>
+            <td>{{ item.fecha_reserva }}</td>
+            <td>{{ item.hora.String }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

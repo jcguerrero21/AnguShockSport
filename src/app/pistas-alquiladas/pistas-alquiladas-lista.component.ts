@@ -12,5 +12,4 @@ export class PistasAlquiladasListaComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }

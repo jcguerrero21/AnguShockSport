@@ -14,6 +14,7 @@ import { DescuentosComponent } from './descuentos/descuentos.component';
 import { RegistroComponent } from './registro/registro.component';
 import { PistasAlquiladasListaComponent} from "./pistas-alquiladas/pistas-alquiladas-lista.component";
 import { PistasAlquiladasAlquilarComponent} from "./pistas-alquiladas/pistas-alquiladas-alquilar.component";
+import { CasaComponent } from './casa.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PistasAlquiladasAlquilarComponent} from "./pistas-alquiladas/pistas-alq
     DescuentosComponent,
     RegistroComponent,
     PistasAlquiladasAlquilarComponent,
-    PistasAlquiladasListaComponent
+    PistasAlquiladasListaComponent,
+    CasaComponent
   ],
   imports: [
     BrowserModule,
